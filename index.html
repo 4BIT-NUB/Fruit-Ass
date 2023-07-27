@@ -34,12 +34,12 @@
 </head>
 <header>
 
-    <body class="ml-28 mr-28">
+    <body class="mb:p-2 lg:ml-28 mr-28">
         <header class="container mx-auto pt-5">
             <nav class=" content-center bg-[#F85559] text-primary-content rounded-l-[600px;] rounded-r-[600px;]">
                 <div class="p-5">
                     <div class="flex justify-around items-center  ">
-                        <ul class="flex gap-10 text-center">
+                        <ul class=" lg:flex gap-10 text-center">
                             <li><a>Home</a></li>
                             <li><a>About Us</a></li>
                             <li><a>Shop</a></li>
@@ -51,7 +51,7 @@
                         </div>
                         <div class="items-center">
                             <div class="input pt-2.5 w-24 md:w-auto rounded-l-[600px;] rounded-r-[600px;] ">
-                                <input type="text" placeholder="Search" class=" w-96 border border-none" />
+                                <input type="text" placeholder="Search" class=" search-query offset-gray-950 w-96 border border-white" />
                                 <a href="#"><i class="fa fa-search "></i></a>
                             </div>
                         </div>
@@ -60,7 +60,7 @@
             </nav>
 
         </header>
-        <main>
+        <main class="container mx-auto">
             <!-- silde bar 1................ -->
             <section class="container mx-auto mt-5">
                 <div class="carousel">
@@ -209,15 +209,15 @@
 
 
 
-            <div class="flex justify-between pt-20">
-                <div>
+            <div class=" grid md:grid-cols-1  lg:grid-cols-2 justify-between mx-auto lg:pt-20">
+                <div class=" ">
                     <h1 class="font-bold text-3xl">Deal of the day</h1>
                     <p class="">Contrary to popular belief, is not simply random text. It has roots in <br> piece of
                         classical Latin
                         literature from 45 BC, making it over 2000 years old.</p>
                 </div>
                 <div>
-                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                    <div class="grid md:grid-col-1 lg:grid-cols-4 gap-5 ">
                         <div class="flex flex-col">
                             <span class="countdown font-mono text-5xl">
                                 <span style="--value:15;"></span>
@@ -237,7 +237,7 @@
                             min
                         </div>
                         <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
+                            <span class="countdown  font-mono text-5xl">
                                 <span style="--value:26;"></span>
                             </span>
                             sec
@@ -246,8 +246,8 @@
                 </div>
 
             </div>
-            <div class="flex gap-5 pt-10">
-                <div class="card w-80 bg-base-100 p-5 shadow-xl border border-gray-400">
+            <div class="grid md:grid-rows-1 lg:grid-cols-4 items-center  gap-5 pt-10">
+                <div class="card  w-80 bg-base-100 p-5 shadow-xl border border-gray-400">
                     <figure><img class="w-36" src="images/fruit9.png" alt="" /></figure>
                     <div class="card-body text-center items-center">
                         <h1 class="font-bold ">12.90$ - 18.85$</h1>
@@ -260,7 +260,7 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
                         <div class="text-center">
-                            <!-- <p>Deatils</p> -->
+                            <!-- <p>Deatils111111111111111111111111111</p> -->
 
                             <!-- Open the modal using ID.showModal() method -->
                             <button class="font-semibold text-error" onclick="my_modal_5.showModal()">Details</button>
@@ -306,7 +306,34 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
                         <div class="text-center">
-                            <p>Deatils</p>
+                            <!-- <p>Deatils 2ndddddddddddddddddddddddd</p> -->
+
+
+                            <button class="font-semibold text-error" onclick="my_modal_5.showModal()">Details</button>
+                            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                                <form method="dialog" class="modal-box">
+                                    <figure><img class="w-36" src="images/fruit9.png" alt="" /></figure>
+                                    <h1 class="font-bold text-3xl">Banana</h1>
+                                    <p class="py-4">Professional employees are there for you to pick the most amazing
+                                        and fresh fruits.</p>
+                                    <div class="rating">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                            checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    </div>
+                                    <div class="modal-action justify-center">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn btn-error">Close</button>
+                                        <button class="btn btn-error">Buy Now</button>
+                                    </div>
+                                </form>
+                            </dialog>
+
+
+
 
 
                         </div>
@@ -360,7 +387,7 @@
                 <button class="btn btn-error">Shop All</button>
             </div>
 
-            <div class="gap-5">
+            <div class="gap-5 ">
                 <div class="hero min-h-screen" style="background-image: url(images/banner1.png);">
                     <div class="hero-overlay bg-opacity-60"></div>
                     <div class="hero-content text-center text-neutral-content">
@@ -373,6 +400,7 @@
                                 <div class="avatar">
                                     <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                                         <img src="images/member1.png" />
+                                        
                                     </div>
                                 </div>
 
@@ -411,10 +439,10 @@
     
             </div>
 
-              <div class="flex p-10">
+              <div class="grid md:grid-cols-1 lg:grid-cols-6 lg:flex gap-5 p-10 w-auto">
 
                 <div>
-                    <div class="flex items-center text-3xl">
+                    <div class=" md:items-center lg:flex lg:items-center text-3xl">
                         <img src="images/logo.png" alt="">
                         <h1>Dedicated Team <hr></h1>
                         
@@ -444,27 +472,27 @@
 
 
 
-                <div class=" ">
-                    <div class="flex items-center text-3xl">
+                <div class="">
+                    <div class="flex  flex-row-reverse items-center text-3xl">
                         <img src="images/logo.png" alt="">
                         <h1>Integrated Supplier <hr></h1>
                         
                     </div>
-                    <p class="pl-14 Lato">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <p class="pr-14 text-right Lato">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
     
-                    <div class="flex items-center text-3xl">
+                    <div class="flex flex-row-reverse items-center text-3xl">
                         <img src="images/logo.png" alt="">
                         <h1>Sustainable Practice <hr></h1>
                         
                     </div>
-                    <p class="pl-14 Lato">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <p class="pr-14 text-right Lato">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
     
-                    <div class="flex items-center text-3xl">
+                    <div class="flex flex-row-reverse items-center text-3xl">
                         <img src="images/logo.png" alt="">
                         <h1>The Benefits Only <hr></h1>
                         
                     </div>
-                    <p class="pl-14 Lato">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <p class="pr-14 text-right Lato">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                 </div>
 
 
@@ -476,14 +504,14 @@
 
             
         </main>
-        <footer class="footer footer-center min-w-full-full p-10 bg-black text-white text-base-content rounded">
+        <footer class="footer footer-center w-full mx-auto justify-center p-10 bg-black text-white text-base-content rounded">
             <div class="">
                 <div class="flex items-center text-3xl">
                     <img src="images/logo.png" alt="">
                     <h1 class="font-bold">Fruit Burst</h1>
                 </div>
 
-                <div class="grid grid-flow-col gap-4">
+                <div class="grid md:text-2xl md:w-auto grid-flow-col gap-4">
                     <a class="link link-hover">Home</a>
                     <a class="link link-hover">Shop</a>
                     <a class="link link-hover">About</a>
